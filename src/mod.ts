@@ -5,7 +5,7 @@ console.log('✅ Microservice started', startedAt)
 
 
 addEventListener("fetch", (event) => {
-  console.log('received event', event.request)
+  console.log('WEBHOOK', event.request)
   
   const response = new Response(JSON.stringify({
     startedAt,
