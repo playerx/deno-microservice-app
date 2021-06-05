@@ -19,7 +19,8 @@ addEventListener("fetch", (event) => {
   const verifier = t.searchParams.get('verifier')
   
   const secret = {
-    'vz7d670a134e7f4077b5': 'v4vc3d439dec4188415d9f'
+    'vz7d670a134e7f4077b5': 'v4vc3d439dec4188415d9f',
+    'vze9b314abc8804a54ac': 'v4vc3d439dec4188415d9f',
   }[zoneId]
   
   if (!secret) {
