@@ -23,6 +23,7 @@ addEventListener("fetch", (event) => {
   }[zoneId]
   
   if (!secret) {
+    console.log('secret not found', zoneId)
     event.respondWith(new Response('vc_decline'))
     return
   }
